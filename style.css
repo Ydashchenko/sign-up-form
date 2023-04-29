@@ -86,6 +86,11 @@ input {
 
 }
 
+input:focus, button:focus, a:focus{
+    outline: none;
+    border:1px solid red;
+}
+
 label {
     font-size: 11px;
 }
