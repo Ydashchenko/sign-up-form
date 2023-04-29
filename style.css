@@ -3,7 +3,7 @@ body, html {
 }
 
 body {
-    background-image: url('levi-bg.jpeg');
+    background-image: url('bg-scouts.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -13,6 +13,3 @@ body {
     src: url(Richard\ Samuels.otf);
 }
 
-body {
-    font-family: my-font, sans-serif;
-}
