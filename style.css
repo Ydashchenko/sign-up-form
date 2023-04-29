@@ -7,3 +7,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+@font-face {
+    font-family: my-font;
+    src: url(Richard\ Samuels.otf);
+}
+
+body {
+    font-family: my-font, sans-serif;
+}
