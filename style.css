@@ -1,11 +1,102 @@
-body, html {
-    height: 100%;
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    color: rgb(200, 200, 200);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
+aside {
+    background-image: url('bg-scouts.jpg');
+    background-size: cover;
+    background-position: 60% 0%;
+    height: 100vh;
+}
 
 @font-face {
-    font-family: my-font;
-    src: url(Richard\ Samuels.otf);
+    font-family: h-font;
+    src: url(Castoro_Titling/CastoroTitling-Regular.ttf);
 }
 
+
+#header {
+    font-family: h-font, Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 0px 100px;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.2)
+}
+
+#logo {
+    width: 50px;
+    
+}
+
+#erwin-img {
+    width: 150px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px 100px 30px 30px;
+    background-color: black;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#motto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+    gap: 10px;
+}
+
+#quote p {
+    text-align: end;
+}
+
+h3 {
+    font-size: 25px;
+    text-shadow: 5px 5px 5px rgb(234, 2, 2);
+}
+
+.input {
+    display: flex;
+    flex-flow: column;
+    width: 45%;
+}
+
+label {
+    font-size: 12px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button {
+    display: block;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: solid 3px rgba(222, 4, 4, 0.789);
+    border-radius: 20px;
+    color: rgba(222, 4, 4, 0.789);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: rgba(222, 4, 4, 0.789);
+}
