@@ -5,9 +5,23 @@ const phoneNumber = document.getElementById('phone_number')
 const password = document.getElementById('password')
 const confirmPassword = document.getElementById('confirm_password')
 const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
 
 
+firstName.addEventListener("input", function (event) {
+    if (firstName.validity.patternMismatch) {
+      firstName.setCustomValidity("Please, start your name with a capital letter");
+    } else {
+      firstName.setCustomValidity("");
+    }
+});
+
+lastName.addEventListener("input", function (event) {
+    if (lastName.validity.patternMismatch) {
+      lastName.setCustomValidity("Please, start your last name with a capital letter");
+    } else {
+      lastName.setCustomValidity("");
+    }
+});
 
 email.addEventListener("input", function (event) {
     if (email.validity.patternMismatch) {
@@ -85,4 +99,7 @@ confirmPassword.addEventListener('input', function(e) {
     } else {
         confirmPassword.setCustomValidity('')
     }
+})
+
+form.addEventListener('submit', function (e) {
 })

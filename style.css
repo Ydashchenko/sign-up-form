@@ -89,11 +89,6 @@ input {
 
 }
 
-input:focus, button:focus, a:focus{
-    outline: none;
-    border:1px solid red;
-}
-
 label {
     font-size: 11px;
 }
@@ -142,5 +137,10 @@ a:hover {
 }
 
 input:valid {
-    border:1px solid green;
+    border:1.5px solid green;
+}
+
+input:focus, button:focus, a:focus{
+    outline: none;
+    border: 2px solid red;
 }
