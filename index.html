@@ -7,6 +7,7 @@
     <title>Scouting Legion</title>
     <link rel="icon" type="image/x-icon" href="scouts-fav.ico" />
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <aside>
@@ -26,29 +27,30 @@
         <p>All these years you've been learning to fight evil and finally this day has come! Today this is your chance to join brave soldiers
              fighting titans outside the walls! You are needed a lot! Save the humanity! ADVANCE! GIVE YOUR HEART!</p>
         <p>Sign up now and get a FREE CLOAK!</p>
-        <form action="">
+        <div id="error"></div>
+        <form id="form" action="/" method="GET">
             <div class="input">
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name" required>
+                <label for="first_name">FIRST NAME *</label>
+                <input type="text" name="first_name" id="first_name" pattern="[A-Z]|[A-Z]\w+" required>
             </div>
             <div class="input">
                 <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" required>
+                <input type="text" name="last_name" id="last_name" pattern="[A-Z]|[A-Z]\w+">
             </div>
             <div class="input">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required>
+                <label for="email">EMAIL *</label>
+                <input type="email" name="email" id="email" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" required>
             </div>
             <div class="input">
                 <label for="phone_number">PHONE NUMBER</label>
-                <input type="text" name="phone_number" id="phone_number">
+                <input type="text" name="phone_number" id="phone_number" pattern="\d{3}-?\d{3}-?\d{4}">
             </div>
             <div class="input">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" required>
+                <label for="password">PASSWORD *</label>
+                <input type="password" name="password" id="password" pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{8,64})" required>
             </div>
             <div class="input">
-                <label for="confirm_password">CONFIRM PASSWORD</label>
+                <label for="confirm_password">CONFIRM PASSWORD *</label>
                 <input type="password" name="confirm_password" id="confirm_password" required>
             </div>
             <button type="submit">Create Account</button>
