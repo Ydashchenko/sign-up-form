@@ -136,3 +136,7 @@ a {
 a:hover {
     color: white
 }
+
+#error {
+    padding-bottom: 20px;
+}

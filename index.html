@@ -27,23 +27,22 @@
         <p>All these years you've been learning to fight evil and finally this day has come! Today this is your chance to join brave soldiers
              fighting titans outside the walls! You are needed a lot! Save the humanity! ADVANCE! GIVE YOUR HEART!</p>
         <p>Sign up now and get a FREE CLOAK!</p>
-        <div id="error"></div>
-        <form id="form" action="/" method="GET">
+        <form id="form" action="index.html" method="GET">
             <div class="input">
                 <label for="first_name">FIRST NAME *</label>
                 <input type="text" name="first_name" id="first_name" pattern="[A-Z]|[A-Z]\w+" required>
             </div>
             <div class="input">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" pattern="[A-Z]|[A-Z]\w+">
+                <label for="last_name">LAST NAME *</label>
+                <input type="text" name="last_name" id="last_name" pattern="[A-Z]|[A-Z]\w+" required>
             </div>
             <div class="input">
                 <label for="email">EMAIL *</label>
                 <input type="email" name="email" id="email" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" required>
             </div>
             <div class="input">
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="text" name="phone_number" id="phone_number" pattern="\d{3}-?\d{3}-?\d{4}">
+                <label for="phone_number">PHONE NUMBER *</label>
+                <input type="text" name="phone_number" id="phone_number" pattern="\d{3}-?\d{3}-?\d{4}" required>
             </div>
             <div class="input">
                 <label for="password">PASSWORD *</label>
@@ -53,7 +52,7 @@
                 <label for="confirm_password">CONFIRM PASSWORD *</label>
                 <input type="password" name="confirm_password" id="confirm_password" required>
             </div>
-            <button type="submit">Create Account</button>
+            <button type="submit" form="form">Create Account</button>
         </form>
         <p>Already have an account? <a href="" id="log-in">Log in</a></p>
     </main>
