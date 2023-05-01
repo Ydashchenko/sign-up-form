@@ -30,7 +30,7 @@ password.addEventListener("input", function (event) {
         const cap = /[A-Z]/
         const dig = /[0-9]/
         const low = /[a-z]/
-        const pS = /[\p{P}\p{S}]/
+        const pS = /[ -\/:-@\[-\`{-~]/
         let message = ''
 
         if (cap.test(password.value)) {

@@ -140,3 +140,7 @@ a:hover {
 #error {
     padding-bottom: 20px;
 }
+
+input:valid {
+    border:1px solid green;
+}
